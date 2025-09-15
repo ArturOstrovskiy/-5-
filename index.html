@@ -16,17 +16,100 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet"
   >
-  <!--  Добавил шрифт DM Sans-->
+  <!--  Привязал CSS-->
   <link
-  rel="stylesheet">
+    rel="stylesheet"
+    href="styles.css"
+  >
   <title>Site</title>
 </head>
 <body>
-<header>
-  <div class="logo">
-    asd
-  </div>
-</header>
+<header class="header">
+  <!--  Логотип -->
+  <a href="/" class="logo">
+    <img
+      src="images/logo.svg"
+      alt="Логотип компании"
+    >
+  </a>
+  <!--  Навигационный список-->
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li>
+        <a>Home</a>
+      </li>
+      <li>
+        <a>Episodes</a>
+      </li>
+      <li>
+        <a>About</a>
+      </li>
+      <li>
+        <a>Contact</a>
+      </li>
+    </ul>
+  </nav>
 
+</header>
+<!--Основная секция-->
+<section class="hero">
+  <!--  Большая картика-->
+  <div class="image-block">
+    <img
+      src="images/mainImage.jpg"
+      alt="Самая большая картинка"
+    >
+  </div>
+  <div class="info-block">
+    <!--  Основной текст-->
+    <h1 class="main-text">Take your podcast to the <span class="next">next</span> <span class="level">level</span></h1>
+    <div class="option-block">
+      <!--      Текст заголовка списка-->
+      <h2 class="title">Listen on</h2>
+      <ul class="link-list">
+        <li>
+          <a>
+            <img
+              src="images/first.svg"
+              alt="Логотип Spotify"
+            >
+          </a>
+        </li>
+        <li>
+          <a>
+            <img
+              src="images/second.svg"
+              alt="Логотип"
+            >
+          </a>
+        </li>
+        <li>
+          <a>
+            <img
+              src="images/third.svg"
+              alt="Логотип SoundCloud"
+            >
+          </a>
+        </li>
+        <li>
+          <a>
+            <img
+              src="images/fourth.svg"
+              alt="Логотип"
+            >
+          </a>
+        </li>
+        <li>
+          <a>
+            <img
+              src="images/fifth.svg"
+              alt="Логотип"
+            >
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 </body>
 </html>
