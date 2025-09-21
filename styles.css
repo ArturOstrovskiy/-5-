@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 body {
@@ -35,6 +34,12 @@ ul {
   display: flex;
   gap: 40px;
   padding: 20px;
+  margin-right: 70px;
+}
+
+.nav-link{
+  color: #fff;
+  text-decoration: none;
 }
 
 .hero {
@@ -43,9 +48,14 @@ ul {
   margin: 40px 70px;
 }
 
+.main-image{
+    border-radius: 12px;
+  }
+
 .info-block {
   display: flex;
   flex-direction: column;
+  margin-left:60px;
 }
 
 .main-text {
@@ -54,6 +64,8 @@ ul {
   line-height: 1.25;
   letter-spacing: 0.05em;
   color: #fff;
+  margin-bottom: 90px;
+  max-width: 526px;
 }
 
 .level {
@@ -77,8 +89,11 @@ ul {
   font-size: 15px;
   line-height: 1.6;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .link-list{
   display: flex;
+  gap: 18px;
 }
+
