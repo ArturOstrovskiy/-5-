@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*border: 1px solid red;*/
 }
 
 body {
@@ -37,7 +38,7 @@ ul {
   margin-right: 70px;
 }
 
-.nav-link{
+.nav-link {
   color: #fff;
   text-decoration: none;
 }
@@ -45,17 +46,17 @@ ul {
 .hero {
   display: flex;
   align-items: center;
-  margin: 40px 70px;
+  margin: 40px 70px 140px 70px;
 }
 
-.main-image{
-    border-radius: 12px;
-  }
+.main-image {
+  border-radius: 12px;
+}
 
 .info-block {
   display: flex;
   flex-direction: column;
-  margin-left:60px;
+  margin-left: 60px;
 }
 
 .main-text {
@@ -92,8 +93,89 @@ ul {
   margin-bottom: 16px;
 }
 
-.link-list{
+.link-list {
   display: flex;
   gap: 18px;
 }
 
+.episodes{
+  display: flex;
+  flex-direction: column;
+  margin: 0 70px 160px 70px;
+
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.title-h2 {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.24;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+.button-link{
+  background-color: #118DA8;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 12px 15px 12px 20px;
+  color: #fff;
+}
+.article-box{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 60px;
+}
+.article{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 40px;
+  border-radius: 32px;
+  background-color: #000;
+}
+.article-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.article-label{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #191919;
+  border-radius: 6px;
+  margin-bottom: 50px;
+}
+
+.article-span{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #118da8;
+  margin-bottom: 18px;
+}
+.article-h2{
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.24;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-bottom: 28px;
+}
+.article-p{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 18px;
+
+}
