@@ -98,19 +98,20 @@ ul {
   gap: 18px;
 }
 
-.episodes{
+.episodes {
   display: flex;
   flex-direction: column;
   margin: 0 70px 160px 70px;
 
 }
 
-.container{
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
 }
+
 .title-h2 {
   font-weight: 400;
   font-size: 64px;
@@ -119,7 +120,7 @@ ul {
   color: #fff;
 }
 
-.button-link{
+.button-link {
   background-color: #118DA8;
   border-radius: 6px;
   font-weight: 400;
@@ -128,12 +129,14 @@ ul {
   padding: 12px 15px 12px 20px;
   color: #fff;
 }
-.article-box{
+
+.article-box {
   display: flex;
   flex-direction: column-reverse;
   gap: 60px;
 }
-.article{
+
+.article {
   display: flex;
   align-items: center;
   gap: 50px;
@@ -141,12 +144,14 @@ ul {
   border-radius: 32px;
   background-color: #000;
 }
-.article-text{
+
+.article-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.article-label{
+
+.article-label {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
@@ -156,14 +161,15 @@ ul {
   margin-bottom: 50px;
 }
 
-.article-span{
+.article-span {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
   color: #118da8;
   margin-bottom: 18px;
 }
-.article-h2{
+
+.article-h2 {
   font-weight: 400;
   font-size: 56px;
   line-height: 1.24;
@@ -171,7 +177,8 @@ ul {
   color: #fff;
   margin-bottom: 28px;
 }
-.article-p{
+
+.article-p {
   font-weight: 400;
   font-size: 22px;
   line-height: 1.5;
