@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*border: 1px solid red;*/
+  border: 1px solid red;
 }
 
 body {
-  background-color: #363F46;
+  background: #191919;
   font-family: "DM Sans", sans-serif;
 }
 
@@ -17,7 +17,7 @@ ul {
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 26px auto;
+  padding: 26px 0;
 }
 
 .logo {
@@ -46,7 +46,7 @@ ul {
 .hero {
   display: flex;
   align-items: center;
-  margin: 40px 70px 140px 70px;
+  padding: 40px 70px 140px 70px;
 }
 
 .main-image {
@@ -101,7 +101,7 @@ ul {
 .episodes {
   display: flex;
   flex-direction: column;
-  margin: 0 70px 160px 70px;
+  padding: 0 70px 160px 70px;
 
 }
 
@@ -186,3 +186,34 @@ ul {
   margin-bottom: 18px;
 
 }
+
+.meet{
+  display: flex;
+ padding: 100px 70px;
+  gap: 60px;
+}
+
+.text-block{
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.arrow-icon{
+  margin-bottom: 20px;
+}
+
+.text-block-span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #118da8;
+}
+.text-block-p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 34px;
+}
+
