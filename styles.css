@@ -2,15 +2,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   color: #fff;
+  /*input[type="submit"]{*/
 
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  a,
+  a img,
+  input[type="button"] {
+    cursor: pointer;
+  }
+
+  cursor: default;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #191919;
   font-family: "DM Sans", sans-serif;
-
+  /*overflow-y: hidden;*/
 }
 
 ul {
@@ -33,6 +46,13 @@ ul {
   line-height: 1.6;
 }
 
+.burger-menu {
+  background-color: #191919;
+  margin-right: 70px;
+  display: none;
+}
+
+
 .navbar-list {
   display: flex;
   gap: 40px;
@@ -48,6 +68,10 @@ ul {
   display: flex;
   align-items: center;
   padding: 40px 70px 140px 70px;
+}
+
+.image-block {
+  position: relative;
 }
 
 .main-image {
@@ -81,6 +105,7 @@ ul {
   font-size: 75px;
   line-height: 1.18;
   letter-spacing: 0.04em;
+  position: relative;
 }
 
 .title {
@@ -93,6 +118,10 @@ ul {
 .link-list {
   display: flex;
   gap: 18px;
+}
+
+.link-logo {
+  transition: 0.3s;
 }
 
 .episodes {
@@ -123,6 +152,7 @@ ul {
   font-size: 18px;
   line-height: 1.6;
   padding: 12px 15px 12px 20px;
+  transition: 0.3s;
 }
 
 .article-box {
@@ -180,23 +210,24 @@ ul {
 
 }
 
-.meet{
+.meet {
   display: flex;
- padding: 100px 70px;
+  padding: 100px 70px;
   gap: 60px;
 }
 
-.text-block{
-display: flex;
+.text-block {
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.arrow-icon{
+.arrow-icon {
   margin-bottom: 20px;
+  transition: 0.3s;
 }
 
-.text-span-no-margin{
+.text-span-no-margin {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
@@ -217,16 +248,22 @@ display: flex;
   margin-bottom: 34px;
 }
 
+.form-section {
+  padding: 100px 70px;
+}
+
 .form {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: flex-start;
   gap: 50px;
+  box-sizing: border-box;
   padding: 60px;
-  margin: 100px 70px;
   border-radius: 32px;
   background-color: #000;
 }
+
 .title-h2-form {
   font-weight: 400;
   font-size: 72px;
@@ -234,56 +271,60 @@ display: flex;
   letter-spacing: 0.04em;
 }
 
-.form-block{
+.form-block {
   display: flex;
   gap: 20px;
   flex-direction: column;
-
+  width: 50%;
 }
 
-.input-field{
+.input-field {
   border: 1px solid #191919;
   border-radius: 6px;
   padding-left: 20px;
-  width: 522px;
-  height: 82px;
+  max-width: 522px;
+  width: 100%;
+  min-height: 82px;
   background-color: #191919;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s;
 }
 
-.reviews{
+.reviews {
   display: flex;
-  margin: 100px 70px;
+  padding: 100px 70px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
 }
 
-.review-box{
+.review-box {
   display: flex;
   flex-direction: column;
   gap: 20px;
   border-radius: 32px;
-  width: 423px;
+  max-width: 423px;
   min-height: 321px;
   background-color: #000;
   padding: 54px 60px 50px 50px;
 
 }
 
-.review-star{
+.review-star {
   display: flex;
   gap: 5px;
 }
-.review-p{
+
+.review-p {
   font-weight: 400;
   font-size: 36px;
   line-height: 1.2;
 }
-.review-span{
+
+.review-span {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.2;
@@ -294,36 +335,182 @@ display: flex;
   display: flex;
   justify-content: flex-start;
   gap: 16px;
-  margin: 100px 70px;
+  padding: 100px 70px;
 }
-.footer-nav{
+
+.footer-nav {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  min-width: 450px;
+  width: 450px;
+  min-width: 25%;
 }
 
-.footer-nav-logo-small{
+.footer-nav-logo-small {
   display: flex;
   gap: 12px;
 }
 
-.footer-nav-list{
+.icon {
+  transition: 0.3s;
+}
+
+
+.footer-nav-list {
   display: flex;
   gap: 16px;
 }
 
-.footer-nav-list-ul{
+.footer-nav-list-ul {
   display: flex;
   flex-direction: column;
   min-width: 180px;
   gap: 10px;
 }
 
-.footer-link{
-  text-decoration: none;
+.nav-link:hover {
+  color: #118da8;
+
 }
 
+.link-logo:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.button-link:hover {
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.3s;
+}
+
+.arrow-icon:hover {
+  rotate: 90deg;
+}
+
+.input-field:hover {
+  border: 1px solid #118da8;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+#hero-image::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 68px;
+  height: 74px;
+  left: -25px;
+  top: -25px;
+  background-image: url(images/strip-img.svg);
+}
+
+.next::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 158px;
+  height: 109px;
+  left: -5px;
+  background-image: url(images/strip-word.svg);
+}
+
+.form::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 147px;
+  height: 91px;
+  left: -38px;
+  bottom: -26px;
+  background-image: url(images/strip-form.svg);
+}
+
+/*Убрал визуальное отображение вертикального скролла*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/*Плавное уменьшение ширины экрана*/
+
+@media (max-width: 1080px) {
+  .header {
+    .logo{
+      padding: 18px 0 18px 60px;
+    }
+
+    .navbar {
+      display: none;
+    }
+
+    .burger-menu {
+      display: flex;
+    }
+
+  }
+  .hero {
+    flex-direction: column;
+    padding: 40px 60px 160px;
+
+    .info-block{
+      flex-direction: column;
+      margin-left: 0;
+      padding-top: 60px;
+      width: 650px;
+    }
+  }
+  .episodes{
+    padding: 40px 20px 160px;
+
+    .container{
+      align-items: flex-start;
+      margin-bottom: 70px;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .article{
+      flex-direction: column;
+    }
+  }
+  .meet {
+    flex-direction: column-reverse;
+  }
+  .form-section {
+    padding: 100px 20px;
+
+    .form{
+      flex-direction: column;
+      }
+      .form-block{
+        width: 100%;
+        .input-field{
+          max-width: 100%;
+        }
+      }
+    }
+  .form::after {
+    left: auto;
+    right: -38px;
+    rotate: -45deg;
+  }
+  .reviews{
+    padding: 40px 20px 160px;
+    .review-box {
+      max-width: 356px;
+      padding: 54px 18px 50px 50px;
+    }
+  }
+  .footer {
+    flex-direction: column;
+    .footer-nav {
+      padding-bottom: 120px;
+    }
+  }
+}
 
 
 

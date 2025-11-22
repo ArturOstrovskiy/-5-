@@ -40,43 +40,53 @@
     <ul class="navbar-list">
       <li>
         <a
-          href="/"
+          href="#hero"
           class="nav-link"
         >Home
         </a>
       </li>
       <li>
         <a
-          href="/"
+          href="#episodes"
           class="nav-link"
         >Episodes
         </a>
       </li>
       <li>
         <a
-          href="/"
+          href="#meet"
           class="nav-link"
         >About
         </a>
       </li>
       <li>
         <a
-          href="/"
+          href="#footer"
           class="nav-link"
         >Contact
         </a>
       </li>
     </ul>
+
   </nav>
+  <a
+    href="/"
+    class="burger-menu"
+  >
+    <img
+      src="images/iconamoon-menu-burger-horizontal-light.svg"
+      alt="Логотип компании"
+    >
+  </a>
 
 </header>
 <!--Основная секция-->
-<section class="hero">
+<section class="hero" id="hero">
   <!--  Большая картика-->
-  <div class="image-block">
+  <div class="image-block" id="hero-image">
     <img
       class="main-image"
-      src="images/main-image.jpg"
+      src="images/main-image.svg"
       alt="Самая большая картинка"
     >
   </div>
@@ -90,55 +100,60 @@
         <li>
           <a
             href="/"
-            class="link-logo"
+
           >
             <img
               src="images/first.svg"
               alt="Логотип Spotify"
+              class="link-logo"
             >
           </a>
         </li>
         <li>
           <a
             href="/"
-            class="link-logo"
+
           >
             <img
               src="images/second.svg"
               alt="Логотип"
+              class="link-logo"
             >
           </a>
         </li>
         <li>
           <a
             href="/"
-            class="link-logo"
+
           >
             <img
               src="images/third.svg"
               alt="Логотип SoundCloud"
+              class="link-logo"
             >
           </a>
         </li>
         <li>
           <a
             href="/"
-            class="link-logo"
+
           >
             <img
               src="images/fourth.svg"
               alt="Логотип"
+              class="link-logo"
             >
           </a>
         </li>
         <li>
           <a
             href="/"
-            class="link-logo"
+
           >
             <img
               src="images/fifth.svg"
               alt="Логотип"
+              class="link-logo"
             >
           </a>
         </li>
@@ -147,7 +162,7 @@
   </div>
 </section>
 <!--Секция второго доп занятия по верстке-->
-<section class="episodes">
+<section class="episodes" id="episodes">
   <div class="container">
     <h2 class="title-h2">Latest episodes</h2>
     <input
@@ -160,10 +175,14 @@
     <!--     Эпизод блок 1-->
     <article class="article">
       <!--      Блок картинки-->
-      <img
-        src="images/article-1-img.svg"
-        alt="article-1-img"
-      >
+      <picture>
+        <source media="(max-width: 1080px)" srcset="images/article-1-tablet.svg">
+        <img
+          class="article-1-img"
+          src="images/article-1-img.svg"
+          alt="article-1-img"
+        >
+      </picture>
       <!--      Блок текста-->
       <div class="article-text">
         <label class="article-label">Gear</label>
@@ -184,10 +203,14 @@
     <!--     Эпизод блок 2-->
     <article class="article">
       <!--      Блок картинки-->
-      <img
-        src="images/article-2-img.svg"
-        alt="article-2-img"
-      >
+      <picture>
+        <source media="(max-width: 1080px)" srcset="images/article-2-tablet.svg">
+        <img
+          class="article-2-img"
+          src="images/article-2-img.svg"
+          alt="article-2-img"
+        >
+      </picture>
       <!--      Блок текста-->
       <div class="article-text">
         <label class="article-label">Tips & Tricks</label>
@@ -204,10 +227,14 @@
     <!--     Эпизод блок 3-->
     <article class="article">
       <!--      Блок картинки-->
+      <picture>
+      <source media="(max-width: 1080px)" srcset="images/article-3-tablet.svg">
       <img
+        class="article-3-img"
         src="images/article-3-img.svg"
         alt="article-3-img"
       >
+      </picture>
       <!--      Блок текста-->
       <div class="article-text">
         <label class="article-label">Gear</label>
@@ -224,9 +251,9 @@
   </div>
   <!--Секция третьего доп занятия по верстке-->
 </section>
-<section class="meet">
+<section class="meet" id="meet">
   <div class="text-block">
-    <a
+    <div><a
       href="/"
     >
       <img
@@ -235,6 +262,7 @@
         alt="arrow icon"
       >
     </a>
+      </div>
     <span class="text-span-no-margin">Meet your host</span>
     <h2 class="title-h2">Jacob Paulaner</h2>
     <p class="text-block-p">Jacob has a background in audio engineering, and has been podcasting since the early days.</p>
@@ -249,40 +277,42 @@
   </div>
 </section>
 <!--Секция четвертого доп занятия по верстке-->
-<section class="form">
-  <div class="text-block">
-    <span class="text-span-no-margin">Email Newsletter</span>
-    <h2 class="title-h2-form">Subscribe <br> for updates</h2>
+<section class="form-section" >
+  <div class="form">
+    <div class="text-block">
+      <span class="text-span-no-margin">Email Newsletter</span>
+      <h2 class="title-h2-form">Subscribe <br> for updates</h2>
+    </div>
+    <form class="form-block">
+      <div>
+        <input
+          class="input-field"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+          required
+        />
+      </div>
+      <div>
+        <input
+          class="input-field"
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+      </div>
+      <div>
+        <input
+          class="button-link"
+          type="button"
+          value="Submit"
+        />
+      </div>
+    </form>
   </div>
-  <form class="form-block">
-    <div>
-      <input
-        class="input-field"
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Name"
-        required
-      />
-    </div>
-    <div>
-      <input
-        class="input-field"
-        type="text"
-        name="email"
-        id="email"
-        placeholder="Email"
-        required
-      />
-    </div>
-    <div>
-      <input
-        class="button-link"
-        type="button"
-        value="Submit"
-      />
-    </div>
-  </form>
 </section>
 <!--Секция пятого доп занятия по верстке-->
 <section class="reviews">
@@ -504,16 +534,19 @@
   </div>
 </section>
 <!--Секция шестого доп занятия по верстке-->
-<footer class="footer">
+<footer class="footer" id="footer">
   <nav class="footer-nav">
     <div>
       <a
         href=""
       >
+        <picture>
+          <source media="(max-width: 1080px)" srcset="images/logo-tablet.svg">
         <img
           src="images/logo.svg"
           alt="Логотип компании"
         >
+          </picture>
       </a>
     </div>
     <div class="footer-nav-logo-small">
@@ -523,6 +556,7 @@
         <img
           src="images/instagram-logo.svg"
           alt="Логотип facebook"
+          class="icon"
         >
       </a>
       <a
@@ -531,6 +565,7 @@
         <img
           src="images/twitter-logo.svg"
           alt="Логотип twitter"
+          class="icon"
         >
       </a>
       <a
@@ -539,6 +574,7 @@
         <img
           src="images/facebook-logo.svg"
           alt="Логотип facebook"
+          class="icon"
         >
       </a>
     </div>
@@ -547,102 +583,108 @@
   <nav class="footer-nav-list">
     <ul class="footer-nav-list-ul">
       <li>
-        <a href="/" class="footer-link">Home</a>
+        <a href="/" class="nav-link">Home</a>
       </li>
       <li>
-        <a href="/" class="footer-link">About</a>
+        <a href="/" class="nav-link">About</a>
       </li>
       <li>
-        <a href="/" class="footer-link">Episodes</a>
+        <a href="/" class="nav-link">Episodes</a>
       </li>
       <li>
-        <a href="/" class="footer-link">Contact</a>
+        <a href="/" class="nav-link">Contact</a>
       </li>
 
     </ul>
 <!--    Второй список ссылок-->
     <ul class="footer-nav-list-ul">
       <li>
-        <a href="/" class="footer-link">Style Guide</a>
+        <a href="/" class="nav-link">Style Guide</a>
       </li>
       <li>
-        <a href="/" class="footer-link">Instructions</a>
+        <a href="/" class="nav-link">Instructions</a>
       </li>
       <li>
-        <a href="/" class="footer-link">Changelog</a>
+        <a href="/" class="nav-link">Changelog</a>
       </li>
       <li>
-        <a href="/" class="footer-link">Credit</a>
+        <a href="/" class="nav-link">Credit</a>
       </li>
       <li>
-        <a href="/" class="footer-link">Powered by Webflow</a>
+        <a href="/" class="nav-link">Powered by Webflow</a>
       </li>
       <li>
-        <a href="/" class="footer-link">Licenses</a>
+        <a href="/" class="nav-link">Licenses</a>
       </li>
 
     </ul>
+    <div class="option-block">
+      <!--      Текст заголовка списка-->
+      <ul class="link-list">
+        <li>
+          <a
+            href="/"
+
+          >
+            <img
+              src="images/first.svg"
+              alt="Логотип Spotify"
+              class="link-logo"
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+
+          >
+            <img
+              src="images/second.svg"
+              alt="Логотип"
+              class="link-logo"
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+
+          >
+            <img
+              src="images/third.svg"
+              alt="Логотип SoundCloud"
+              class="link-logo"
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+
+          >
+            <img
+              src="images/fourth.svg"
+              alt="Логотип"
+              class="link-logo"
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+
+          >
+            <img
+              src="images/fifth.svg"
+              alt="Логотип"
+              class="link-logo"
+            >
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
-  <div class="option-block">
-    <!--      Текст заголовка списка-->
-    <ul class="link-list">
-      <li>
-        <a
-          href="/"
-          class="link-logo"
-        >
-          <img
-            src="images/first.svg"
-            alt="Логотип Spotify"
-          >
-        </a>
-      </li>
-      <li>
-        <a
-          href="/"
-          class="link-logo"
-        >
-          <img
-            src="images/second.svg"
-            alt="Логотип"
-          >
-        </a>
-      </li>
-      <li>
-        <a
-          href="/"
-          class="link-logo"
-        >
-          <img
-            src="images/third.svg"
-            alt="Логотип SoundCloud"
-          >
-        </a>
-      </li>
-      <li>
-        <a
-          href="/"
-          class="link-logo"
-        >
-          <img
-            src="images/fourth.svg"
-            alt="Логотип"
-          >
-        </a>
-      </li>
-      <li>
-        <a
-          href="/"
-          class="link-logo"
-        >
-          <img
-            src="images/fifth.svg"
-            alt="Логотип"
-          >
-        </a>
-      </li>
-    </ul>
-  </div>
+
 </footer>
 </body>
 </html>
