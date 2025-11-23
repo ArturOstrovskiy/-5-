@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*border: 1px solid red;*/
+  border: 1px solid red;
   color: #fff;
   /*input[type="submit"]{*/
 
@@ -33,6 +33,7 @@ ul {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 26px 0;
 }
 
@@ -85,6 +86,7 @@ ul {
 }
 
 .main-text {
+  display: inline-block;
   font-weight: 400;
   font-size: 70px;
   line-height: 1.25;
@@ -234,12 +236,6 @@ ul {
   color: #118da8;
 }
 
-/*.text-block-span {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #118da8;
-}*/
 .text-block-p {
   font-weight: 400;
   font-size: 22px;
@@ -449,6 +445,7 @@ body::-webkit-scrollbar {
 
     .burger-menu {
       display: flex;
+      margin-right: 20px;
     }
 
   }
@@ -507,11 +504,129 @@ body::-webkit-scrollbar {
   .footer {
     flex-direction: column;
     .footer-nav {
+      max-width: 100%;
       padding-bottom: 120px;
     }
   }
 }
 
+/*Верстка под 576px*/
 
 
+@media (max-width: 720px) {
+  .header {
+    .logo{
+      padding: 18px 0 18px 20px;
+    }
+  }
+  .hero {
+    padding: 40px 20px 60px;
+
+    .main-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .info-block {
+      max-width: 100%;
+      height: auto;
+
+      .main-text {
+        margin: 0 20px 75px;
+        font-size: clamp(20px, 5vw + 1rem, 70px);
+      }
+
+      .next,
+      .level {
+        font-size: clamp(30px, 6.9vw + 1rem, 70px);
+      }
+
+      .next::after {
+       display: none;
+      }
+    }
+    .option-block{
+      padding: 0 20px;
+    }
+  }
+  .episodes {
+    padding: 60px 20px 60px;
+    .container{
+     padding: 0 20px;
+      .title-h2{
+        font-size: clamp(30px, 6vw + 1rem, 70px);
+      }
+
+    }
+    .article-box{
+      gap: 40px;
+    }
+    .article{
+      padding: 20px;
+      gap: 30px;
+      .article-img{
+        max-width: 100%;
+        height: auto;
+      }
+      .article-text{
+        .article-label{
+          margin-bottom: 28px;
+        }
+        .article-h2{
+          font-size: clamp(30px, 6.4vw + 1rem, 70px);
+        }
+        .article-p{
+          font-size: clamp(20px, 1.6vw + 1rem, 70px);
+        }
+      }
+    }
+
+  }
+  .meet {
+    padding: 60px 40px;
+    gap: 40px;
+    .main-image{
+      max-width: 100%;
+      height: auto;
+    }
+    .title-h2{
+      font-size: clamp(30px, 6.4vw + 1rem, 70px);
+    }
+    .text-block-p{
+      font-size: clamp(20px, 1.6vw + 1rem, 70px);
+    }
+  }
+  .form-section{
+    padding: 60px 20px;
+    .form{
+      padding: 60px 20px;
+      gap: 60px;
+    }
+    .title-h2-form{
+      font-size: clamp(30px, 8vw + 1rem, 70px);
+    }
+  }
+  .reviews{
+    .review-box{
+      padding: 54px 18px 50px 20px;
+      .review-p{
+        font-size: clamp(30px, 5.4vw + 1rem, 70px);
+      }
+      .review-span{
+        font-size: clamp(20px, 2vw + 1rem, 70px);
+      }
+    }
+  }
+  .footer {
+    padding: 60px 40px;
+    .footer-nav {
+      padding-bottom: 70px;
+      max-width: 100%;
+    }
+    .footer-nav-list {
+      gap: 60px;
+      flex-direction: column;
+    }
+  }
+}
 
